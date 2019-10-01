@@ -40,6 +40,7 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     public TimeEntry update(long id, TimeEntry timeEntry) {
         if(timeEntryDb.containsKey(id))
         {
+            timeEntry.setTimeEntryId(id);
             timeEntryDb.put(id,timeEntry);
             return timeEntry;
         }
