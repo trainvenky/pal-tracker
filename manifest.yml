@@ -3,7 +3,6 @@ applications:
   - name: pal-tracker
     path: build/libs/pal-tracker.jar
     routes:
-      - venky-tracker.apps.evans.pal.pivotal.io
       - venky-tracker2.apps.evans.pal.pivotal.io
     env:
       WELCOME_MESSAGE: Hello from the review environment
