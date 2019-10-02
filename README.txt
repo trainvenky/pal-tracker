@@ -8,3 +8,4 @@
 7. https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
 8. Mybatis
 9. Last Responsible Moment
+10. CAP Theorm
