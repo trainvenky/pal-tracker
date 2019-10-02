@@ -1,27 +1,26 @@
 package io.pivotal.pal.tracker;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
-import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.List;
-import java.util.Map;
 
 import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
-@Repository
+@Repository("jdbcRepo")
 public class JdbcTimeEntryRepository implements TimeEntryRepository {
 
-    private MysqlDataSource dataSource;
+    private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
     private RowMapper<TimeEntry> rm;
 
-    public JdbcTimeEntryRepository(MysqlDataSource dataSource) {
+    public JdbcTimeEntryRepository(DataSource dataSource) {
         this.dataSource=dataSource;
         this.jdbcTemplate=new JdbcTemplate(dataSource);
         rm = new RowMapper<TimeEntry>() {

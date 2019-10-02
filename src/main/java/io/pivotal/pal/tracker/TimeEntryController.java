@@ -15,7 +15,7 @@ public class TimeEntryController {
 
     private TimeEntryRepository timeEntryRepository;
 
-    public TimeEntryController(@Qualifier("JdbcTimeEntryRepository") TimeEntryRepository timeEntryRepository) {
+    public TimeEntryController(@Qualifier("jdbcRepo") TimeEntryRepository timeEntryRepository) {
 
         this.timeEntryRepository = timeEntryRepository;
     }
