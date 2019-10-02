@@ -3,4 +3,6 @@
 2. Write a custom starter for the microservices chassis
 3. Write unit tests to drive features
 4. Use Environment Variables to do configuration
-5.
+5. Flyway for Database Migrations
+6. Migration from evolution and actual
+7.
