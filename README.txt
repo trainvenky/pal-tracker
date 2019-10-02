@@ -5,4 +5,6 @@
 4. Use Environment Variables to do configuration
 5. Flyway for Database Migrations
 6. Migration from evolution and actual
-7.
+7. https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
+8. Mybatis
+9. Last Responsible Moment
